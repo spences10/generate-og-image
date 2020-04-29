@@ -4,8 +4,6 @@ import { writeTempFile } from './file'
 import { parseReqs } from './parser'
 import { getHtml } from './template'
 
-const isDev = process.env.NOW_REGION === 'dev1'
-
 export default async function handler(
   req: IncomingMessage,
   res: ServerResponse
@@ -14,6 +12,8 @@ export default async function handler(
     const parsedReqs = parseReqs(req)
     const html = getHtml(parsedReqs)
 
+    // === Use this to get Jpeg output ===
+    const isDev = process.env.NOW_REGION === 'dev1'
     const { title, author } = parsedReqs
     const filename = [title, author].join('-')
     const filePath = await writeTempFile(filename, html)
@@ -29,7 +29,7 @@ export default async function handler(
     )
     res.end(file)
 
-    // === Use this to see HTML output ===
+    // === Use this to get HTML output ===
     // res.statusCode = 200
     // res.setHeader('Content-Type', 'text/html')
     // res.end(html)
