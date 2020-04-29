@@ -25,7 +25,5 @@ export function parseReqs(req: IncomingMessage) {
     image,
   }
 
-  console.log(JSON.stringify(parsedReqs))
-
   return parsedReqs
 }
