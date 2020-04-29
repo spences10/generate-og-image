@@ -29,6 +29,7 @@ export default async function handler(
     )
     res.end(file)
 
+    // === Use this to see HTML output ===
     // res.statusCode = 200
     // res.setHeader('Content-Type', 'text/html')
     // res.end(html)
