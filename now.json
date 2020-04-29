@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "public": false,
+  "builds": [
+    {
+      "src": "src/card.ts",
+      "use": "@now/node",
+      "config": { "maxLambdaSize": "36mb" }
+    }
+  ],
+  "routes": [{ "src": "/og.jpg", "dest": "/src/card.ts" }]
+}
