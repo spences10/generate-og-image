@@ -51,9 +51,10 @@ table {
   box-sizing: border-box;
 }
 body {
-  background: #95adbe;
+  background: linear-gradient(0.25turn, 
+    rgba(170,127,212,1) , rgba(102,51,153,1) );
   height: 100vh;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-size: 18px;
   padding: 20px;
 }
@@ -61,23 +62,24 @@ body {
   position: relative;
   height: calc(100vh - 40px);
   padding: 20px;
-  background: #f8f8f8;
+  background: #f7fafc;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
 }
 .title {
-  font-size: 8em;
+  font-size: 6em;
   line-height: 1.05em;
   height: 3.15em;
   overflow: hidden;
-  color: #313131;
+  color: #1a202c;
 }
 .author {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding: 20px;
+  padding: 30px;
   font-size: 3em;
-  color: #525252;
+  color: #4a5568;
 }
 .author-image {
   width: 1.5em;
@@ -88,9 +90,9 @@ body {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  padding: 20px;
+  padding: 30px;
   font-size: 2em;
-  color: #525252;
+  color: #4a5568;
 }
 `
 }
@@ -104,7 +106,7 @@ export function getHtml(parsedReqs: ParsedReqs) {
       <meta charset="utf-8">
       <title>Generated Image</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
       <style>
         ${getCss()}
       </style>
