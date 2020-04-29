@@ -9,6 +9,10 @@
     "now-build": "tsc",
     "watch": "tsc --watch"
   },
+  "dependencies": {
+    "chrome-aws-lambda": "2.1.1",
+    "puppeteer-core": "3.0.2"
+  },
   "devDependencies": {
     "@types/node": "13.13.4",
     "typescript": "3.8.3"
