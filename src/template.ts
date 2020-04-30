@@ -68,10 +68,17 @@ body {
 }
 .title {
   font-size: 6em;
-  line-height: 1.05em;
-  height: 3.15em;
+  height: 4em;
   overflow: hidden;
   color: #1a202c;
+  word-spacing: -20px;
+  background: linear-gradient(
+    rgba(102,51,153,1), 
+    rgba(170,127,212,1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .author {
   position: absolute;
