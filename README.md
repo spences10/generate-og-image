@@ -15,7 +15,7 @@ https://image-og.now.sh/og.jpg
 &image=https%3A%2F%2Fscottspence.me%2Ffavicon.png
 ```
 
-Visit the URL for the asset generated:
+Visit [the URL] for the asset generated:
 
 ![open graph card example](./og.jpg)
 
