@@ -16,5 +16,19 @@
   "devDependencies": {
     "@types/node": "13.13.4",
     "typescript": "3.8.3"
-  }
+  },
+  "description": "Use the Vercel Now.sh platform to create a serverless function to create social sharing cards.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/generate-og-image.git"
+  },
+  "keywords": [
+    "og",
+    "open graph",
+    "images"
+  ],
+  "bugs": {
+    "url": "https://github.com/spences10/generate-og-image/issues"
+  },
+  "homepage": "https://github.com/spences10/generate-og-image#readme"
 }
