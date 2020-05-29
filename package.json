@@ -2,7 +2,7 @@
   "name": "generate-og-image",
   "version": "0.0.1",
   "main": "dist/card.js",
-  "author": "spences10 <yo@scottspence.dev>",
+  "author": "Scott Spence <yo@scottspence.dev>",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
@@ -16,6 +16,14 @@
   "devDependencies": {
     "@types/node": "13.13.4",
     "typescript": "3.8.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "es5",
+    "printWidth": 70,
+    "arrowParens": "avoid",
+    "proseWrap": "always"
   },
   "description": "Use the Vercel Now.sh platform to create a serverless function to create social sharing cards.",
   "repository": {
