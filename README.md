@@ -10,7 +10,7 @@ URL:
 ```text
 https://image-og.now.sh/og.jpg
 ?author=Scott%20Spence
-&website=thelocalhost.io
+&website=scottspence.com
 &title=Modern%20web%20development%20guides%20hints%20and%20tips.
 &image=https%3A%2F%2Fscottspence.me%2Ffavicon.png
 ```
