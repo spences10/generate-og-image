@@ -3,7 +3,7 @@ import { launch } from 'puppeteer-core'
 
 // local path on Ubuntu or could be
 // /usr/bin/google-chrome-stable
-const exePath = '/snap/bin/chromium'
+const exePath = '/usr/include/google'
 
 interface Options {
   args: string[]
