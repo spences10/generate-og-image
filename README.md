@@ -35,4 +35,4 @@ I followed along with the Leigh Halliday course on YouTube
 <!-- Links -->
 
 [the url]:
-  https://image-og.now.sh/og.jpg?author=Scott%20Spence&website=thelocalhost.io&title=Modern%20web%20development%20guides%20hints%20and%20tips.&image=https%3A%2F%2Fscottspence.me%2Ffavicon.png
+  https://image-og.now.sh/og.jpg?author=Scott%20Spence&website=scottspence.com&title=Modern%20web%20development%20guides%20hints%20and%20tips.&image=https%3A%2F%2Fscottspence.me%2Ffavicon.png
