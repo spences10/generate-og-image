@@ -212,8 +212,15 @@ export function getCss(website: any) {
       `,
     'scottspence.com': `
       body {
-        background: linear-gradient(0.25turn,
-          rgb(66, 153, 225) , rgb(245, 101, 101) );
+        --color-1: rgb(102, 51, 153);
+        --color-2: rgb(170, 127, 212);
+        --background: rgb(247, 250, 252);
+        --text: rgb(156, 163, 175);
+        background: linear-gradient(
+          0.25turn,
+          var(--color-1),
+          var(--color-2)
+        );
         height: 100vh;
         font-family: 'Space Mono', sans-serif;
         font-size: 18px;
@@ -223,20 +230,18 @@ export function getCss(website: any) {
         position: relative;
         height: calc(100vh - 100px);
         padding: 50px;
-        background: #f7fafc;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        background: var(--background);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
         border-radius: 14px;
       }
       .title {
         font-size: 5.4em;
         height: 4em;
         overflow: hidden;
-        color: #1a202c;
+        color: var(--background);
         word-spacing: -20px;
-        background: linear-gradient(
-          rgb(245, 101, 101) ,
-          rgb(66, 153, 225)
-        );
+        background: linear-gradient(var(--color-2), var(--color-1));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -247,7 +252,7 @@ export function getCss(website: any) {
         left: 0px;
         padding: 50px;
         font-size: 3em;
-        color: #4a5568;
+        color: var(--text);
       }
       .author-image {
         width: 1.5em;
@@ -260,7 +265,7 @@ export function getCss(website: any) {
         right: 0px;
         padding: 50px;
         font-size: 2em;
-        color: #4a5568;
+        color: var(--text);
       }
       `,
   }
